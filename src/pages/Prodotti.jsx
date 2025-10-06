@@ -18,7 +18,7 @@ const Prodotti = () => {
   //   LISTA PRODOTTI
   return (
     <>
-      <div>
+      <div className="main-container-products">
         <h2>Products List</h2>
 
         {/* contenitore bootstrap */}

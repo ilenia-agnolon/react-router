@@ -102,13 +102,15 @@ nav {
   box-shadow: 0 18px 45px rgba(90, 75, 50, 0.15);
   backdrop-filter: blur(14px) saturate(120%);
   font-size: 16px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 
   ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 30px;
     height: 90px;
   }
 }
@@ -118,10 +120,23 @@ nav {
   text-decoration: none;
 }
 
+nav li:hover {
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.85),
+    0 0 12px rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
 /* HOMEPAGE */
 .home-page-txt {
   color: whitesmoke;
   padding: 50px;
+  height: 100vh;
+  color: whitesmoke;
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   h1 {
     font-size: 50px;
@@ -133,6 +148,10 @@ nav {
 }
 
 /* PAGINA PRODOTTI */
+.main-container-products {
+  margin-top: 110px;
+}
+
 h2 {
   text-align: center;
   margin-top: 30px;
