@@ -18,7 +18,22 @@ const Prodotti = () => {
   //   LISTA PRODOTTI
   return (
     <>
-      <div>Questa è la pagina prodotti</div>
+      <div>
+        <h2>Products List</h2>
+
+        <ul>
+          {prodotti.map((prodotto) => (
+            <li key={prodotto.id}>
+              <h3>{prodotto.title}</h3>
+              <img src={prodotto.image} alt={prodotto.title} />
+              <p>{prodotto.description}</p>
+              <p>{prodotto.price}</p>
+              <p>{prodotto.category}</p>
+              <p>Rate: {prodotto.rating.rate}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };

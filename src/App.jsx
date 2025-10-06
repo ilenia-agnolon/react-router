@@ -16,8 +16,8 @@ function App() {
         <MainNavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/chi-siamo" element={<ChiSiamo />} />
-          <Route path="/prodotti" element={<Prodotti />} />
+          <Route path="/who-we-are" element={<ChiSiamo />} />
+          <Route path="/products" element={<Prodotti />} />
         </Routes>
       </BrowserRouter>
     </>

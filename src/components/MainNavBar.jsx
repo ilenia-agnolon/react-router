@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 //dati menù
 const links = [
   { path: "/", label: "Home" },
-  { path: "/chi-siamo", label: "Chi Siamo" },
-  { path: "/prodotti", label: "Prodotti" },
+  { path: "/who-we-are", label: "Who we are" },
+  { path: "/products", label: "Products" },
 ];
 
 const MainNavBar = () => {
