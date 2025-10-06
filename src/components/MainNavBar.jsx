@@ -13,7 +13,7 @@ const MainNavBar = () => {
       <nav>
         <ul>
           {links.map((link) => (
-            <li>
+            <li key={link.path}>
               <NavLink to={link.path} className="nav-element">
                 {link.label}
               </NavLink>
