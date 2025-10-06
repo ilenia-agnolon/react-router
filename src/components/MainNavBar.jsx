@@ -11,11 +11,16 @@ const MainNavBar = () => {
   return (
     <nav>
       <ul>
-        <li>
+        {links.map((link) => (
+          <li>
+            <NavLink to={link.path}>{link.label}</NavLink>
+          </li>
+        ))}
+        {/* <li>
           <Link to="/">Home Page</Link>
           <NavLink to="/chi-siamo">Chi Siamo</NavLink>
           <NavLink to="/prodotti">Prodotti</NavLink>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
