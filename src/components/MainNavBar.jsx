@@ -9,20 +9,24 @@ const links = [
 
 const MainNavBar = () => {
   return (
-    <nav>
-      <ul>
-        {links.map((link) => (
-          <li>
-            <NavLink to={link.path}>{link.label}</NavLink>
-          </li>
-        ))}
-        {/* <li>
+    <header>
+      <nav>
+        <ul>
+          {links.map((link) => (
+            <li>
+              <NavLink to={link.path} className="nav-element">
+                {link.label}
+              </NavLink>
+            </li>
+          ))}
+          {/* <li>
           <Link to="/">Home Page</Link>
           <NavLink to="/chi-siamo">Chi Siamo</NavLink>
           <NavLink to="/prodotti">Prodotti</NavLink>
         </li> */}
-      </ul>
-    </nav>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
