@@ -1,5 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
 
+//dati menù
+const links = [
+  { path: "/", label: "Home" },
+  { path: "/chi-siamo", label: "Chi Siamo" },
+  { path: "/prodotti", label: "Prodotti" },
+];
+
 const MainNavBar = () => {
   return (
     <nav>
