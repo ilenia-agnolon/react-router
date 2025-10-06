@@ -21,18 +21,45 @@ const Prodotti = () => {
       <div>
         <h2>Products List</h2>
 
-        <ul>
-          {prodotti.map((prodotto) => (
-            <li key={prodotto.id}>
-              <h3>{prodotto.title}</h3>
-              <img src={prodotto.image} alt={prodotto.title} />
-              <p>{prodotto.description}</p>
-              <p>{prodotto.price}</p>
-              <p>{prodotto.category}</p>
-              <p>Rate: {prodotto.rating.rate}</p>
-            </li>
-          ))}
-        </ul>
+        {/* contenitore bootstrap */}
+        <div className="container">
+          <div className="row">
+            {prodotti.map((prodotto) => (
+              <div className="product-card" key={prodotto.id}>
+                {/* card bootstrap */}
+                <div className="card">
+                  {/* id */}
+                  {/* <p>ID: {prodotto.id}</p> */}
+
+                  {/* img */}
+                  <img
+                    src={prodotto.image}
+                    className="card-img"
+                    alt={prodotto.title}
+                  />
+
+                  {/* corpo card */}
+                  <div className="card-body">
+                    {/* nome prodotto */}
+                    <h3 className="card-title">{prodotto.title}</h3>
+
+                    {/* descrizione */}
+                    {/* <p className="card-text">{prodotto.description}</p> */}
+
+                    {/* prezzo */}
+                    <p>Price: ${prodotto.price}</p>
+
+                    {/* categoria */}
+                    <p>Category: {prodotto.category}</p>
+
+                    {/* voto */}
+                    <p>Rate: {prodotto.rating.rate}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );
