@@ -20,7 +20,7 @@ const Prodotti = () => {
   return (
     <>
       <div className="main-container-products">
-        <h2>Products List</h2>
+        <h2>Products</h2>
 
         {/* contenitore  */}
         <div className="container">
@@ -48,10 +48,16 @@ const Prodotti = () => {
                       <div className="card-btn">${prodotto.price}</div>
 
                       {/* categoria */}
-                      <p>Category: {prodotto.category}</p>
+                      <p>
+                        <strong>Category: </strong>
+                        {prodotto.category}
+                      </p>
 
                       {/* voto */}
-                      <p>Rate: {prodotto.rating.rate}</p>
+                      <p>
+                        <strong>Rate: </strong>
+                        {prodotto.rating.rate}
+                      </p>
                     </div>
                   </div>
                 </Link>

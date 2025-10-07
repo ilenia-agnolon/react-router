@@ -46,10 +46,12 @@ const ProductDetailPage = () => {
             <strong>Category: </strong>
             {prodotto.category}
           </p>
-          <p>Category: {prodotto.category}</p>
 
           {/* voto */}
-          {/* <p>Rate: {prodotto.rating.rate}</p> */}
+          <p>
+            <strong>Rate: </strong>
+            {prodotto.rating?.rate}
+          </p>
         </div>
       </div>
     </div>
