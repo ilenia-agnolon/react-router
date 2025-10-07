@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import ChiSiamo from "./pages/ChiSiamo";
 import Prodotti from "./pages/Prodotti";
 import MainNavBar from "./components/MainNavBar";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/who-we-are" element={<ChiSiamo />} />
           <Route path="/products" element={<Prodotti />} />
+          {/* NUOVA ROTTA PER React Router Store */}
+          <Route path="/products/:id" element={ProductDetailPage} />
         </Routes>
       </BrowserRouter>
     </>
