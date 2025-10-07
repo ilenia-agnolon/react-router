@@ -196,7 +196,7 @@ h2 {
   padding: 30px;
 }
 
-.card-body {
+.card-txt {
   color: white;
   display: flex;
   flex-direction: column;

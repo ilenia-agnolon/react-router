@@ -21,16 +21,13 @@ const Prodotti = () => {
       <div className="main-container-products">
         <h2>Products List</h2>
 
-        {/* contenitore bootstrap */}
+        {/* contenitore  */}
         <div className="container">
           <div className="row">
             {prodotti.map((prodotto) => (
               <div className="product-card" key={prodotto.id}>
-                {/* card bootstrap */}
+                {/* card  */}
                 <div className="card">
-                  {/* id */}
-                  {/* <p>ID: {prodotto.id}</p> */}
-
                   {/* img */}
                   <img
                     src={prodotto.image}
@@ -38,8 +35,8 @@ const Prodotti = () => {
                     alt={prodotto.title}
                   />
 
-                  {/* corpo card */}
-                  <div className="card-body">
+                  {/* txt */}
+                  <div className="card-txt">
                     {/* nome prodotto */}
                     <h3 className="card-title">{prodotto.title}</h3>
 
