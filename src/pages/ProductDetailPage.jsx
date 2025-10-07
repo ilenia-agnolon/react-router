@@ -14,14 +14,44 @@ const ProductDetailPage = () => {
   useEffect(() => {
     axios
       .get(`https://fakestoreapi.com/products/${id}`)
-      .then((response) => console.log(response.data))
+      .then((response) => setProdotto(response.data))
       .catch((error) => console.log(error));
-  });
+  }, []);
 
   return (
     <div className="ProductDetailPage-main-container">
-      <h1>questa è la pagina di dettaglio</h1>
-      <h2>questo invece è l'ID prodotto: {id}</h2>
+      {/* <h2>ID prodotto: {id}</h2> */}
+      {/* card  */}
+      <div className="ONE_card">
+        {/* img */}
+        <img
+          src={prodotto.image}
+          className="ONE_card-img"
+          alt={prodotto.title}
+        />
+
+        {/* txt */}
+        <div className="ONE_card-txt">
+          {/* nome prodotto */}
+          <h3 className="ONE_card-title">{prodotto.title}</h3>
+
+          {/* descrizione */}
+          <p className="ONE_card-description">{prodotto.description}</p>
+
+          {/* prezzo */}
+          <div className="ONE_card-btn">${prodotto.price}</div>
+
+          {/* categoria */}
+          <p>
+            <strong>Category: </strong>
+            {prodotto.category}
+          </p>
+          <p>Category: {prodotto.category}</p>
+
+          {/* voto */}
+          {/* <p>Rate: {prodotto.rating.rate}</p> */}
+        </div>
+      </div>
     </div>
   );
 };

@@ -44,11 +44,8 @@ const Prodotti = () => {
                       {/* nome prodotto */}
                       <h3 className="card-title">{prodotto.title}</h3>
 
-                      {/* descrizione */}
-                      {/* <p className="card-text">{prodotto.description}</p> */}
-
                       {/* prezzo */}
-                      <p>Price: ${prodotto.price}</p>
+                      <div className="card-btn">${prodotto.price}</div>
 
                       {/* categoria */}
                       <p>Category: {prodotto.category}</p>
