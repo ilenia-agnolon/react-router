@@ -25,7 +25,7 @@ const Prodotti = () => {
         {/* contenitore  */}
         <div className="container">
           <div className="row">
-            {/* PRODOTTO */}
+            {/* - MAP PRODOTTO - */}
             {prodotti.map((prodotto) => (
               <div className="product-card" key={prodotto.id}>
                 {/* --LINK TO-- */}
