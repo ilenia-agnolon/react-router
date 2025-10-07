@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Prodotti = () => {
   const [prodotti, setProdotti] = useState([]);
@@ -24,35 +25,39 @@ const Prodotti = () => {
         {/* contenitore  */}
         <div className="container">
           <div className="row">
+            {/* PRODOTTO */}
             {prodotti.map((prodotto) => (
               <div className="product-card" key={prodotto.id}>
-                {/* card  */}
-                <div className="card">
-                  {/* img */}
-                  <img
-                    src={prodotto.image}
-                    className="card-img"
-                    alt={prodotto.title}
-                  />
+                {/* --LINK TO-- */}
+                <Link to={`/products/${prodotto.id}`}>
+                  {/* card  */}
+                  <div className="card">
+                    {/* img */}
+                    <img
+                      src={prodotto.image}
+                      className="card-img"
+                      alt={prodotto.title}
+                    />
 
-                  {/* txt */}
-                  <div className="card-txt">
-                    {/* nome prodotto */}
-                    <h3 className="card-title">{prodotto.title}</h3>
+                    {/* txt */}
+                    <div className="card-txt">
+                      {/* nome prodotto */}
+                      <h3 className="card-title">{prodotto.title}</h3>
 
-                    {/* descrizione */}
-                    {/* <p className="card-text">{prodotto.description}</p> */}
+                      {/* descrizione */}
+                      {/* <p className="card-text">{prodotto.description}</p> */}
 
-                    {/* prezzo */}
-                    <p>Price: ${prodotto.price}</p>
+                      {/* prezzo */}
+                      <p>Price: ${prodotto.price}</p>
 
-                    {/* categoria */}
-                    <p>Category: {prodotto.category}</p>
+                      {/* categoria */}
+                      <p>Category: {prodotto.category}</p>
 
-                    {/* voto */}
-                    <p>Rate: {prodotto.rating.rate}</p>
+                      {/* voto */}
+                      <p>Rate: {prodotto.rating.rate}</p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>

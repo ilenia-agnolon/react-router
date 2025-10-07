@@ -150,6 +150,10 @@ nav li:hover {
 /* PAGINA PRODOTTI */
 .main-container-products {
   margin-top: 110px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 h2 {
