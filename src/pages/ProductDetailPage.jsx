@@ -9,8 +9,14 @@ const ProductDetailPage = () => {
   //stato dove salverò i dati del prodotto selezionato
   const [prodotto, setProdotto] = useState({});
 
+  //AXIOS
   //quando il componente si carica, parte la chiamata all'API per prendere i dati
-  useEffect(() => {});
+  useEffect(() => {
+    axios
+      .get(`https://fakestoreapi.com/products/${id}`)
+      .then((response) => console.log(response.data))
+      .catch((error) => console.log(error));
+  });
 
   return (
     <div className="ProductDetailPage-main-container">
