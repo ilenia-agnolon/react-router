@@ -1,5 +1,9 @@
 const ProductDetailPage = () => {
-  return <p>questa è la pagina di dettaglio</p>;
+  return (
+    <div className="ProductDetailPage-main-container">
+      <h1>questa è la pagina di dettaglio</h1>
+    </div>
+  );
 };
 
 export default ProductDetailPage;

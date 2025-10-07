@@ -20,7 +20,7 @@ function App() {
           <Route path="/who-we-are" element={<ChiSiamo />} />
           <Route path="/products" element={<Prodotti />} />
           {/* NUOVA ROTTA PER React Router Store */}
-          <Route path="/products/:id" element={ProductDetailPage} />
+          <Route path="/products/:id" element={<ProductDetailPage />} />
         </Routes>
       </BrowserRouter>
     </>
