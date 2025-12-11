@@ -1,16 +1,63 @@
-# React + Vite
+<img src="./boolean-logo.png" width="20px">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# react-router
 
-Currently, two official plugins are available:
+<img src="./screenshots/react-router_1.png" width="600px">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="./screenshots/react-router_2.png" width="600px">
 
-## React Compiler
+<img src="./screenshots/react-router_3.png" width="600px">
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img src="./screenshots/react-router_4.png" width="600px">
 
-## Expanding the ESLint configuration
+<img src="./screenshots/react-router_5.png" width="600px">
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🇬🇧 English Version
+
+### Overview
+
+React exercise focused on building the frontend of a small e-commerce with React Router, using Fake Store API as a fake backend to load products and their details.
+
+### Assignment Summary
+
+The assignment required to:
+
+- Create a new React application for a mini e-commerce.
+- Install React Router DOM:
+  - `npm i react-router-dom`
+- Define at least three main pages:
+  - Homepage with a welcome message or promotional image.
+  - “About us” page.
+  - “Products” page that retrieves and displays the product list from:
+    - `https://fakestoreapi.com/products`
+- Implement a Navbar visible on all pages to navigate between the main sections.
+- Make each product on the Products page clickable using `<Link>`.
+- Add a product detail page that shows information for a single product, loading data from:
+  - `https://fakestoreapi.com/products/:id`
+- Configure dynamic routing so that the product ID is read from the URL.
+
+---
+
+## 🇮🇹 Versione Italiana
+
+### Panoramica
+
+Esercizio React dedicato alla realizzazione del frontend di un mini e-commerce con React Router, utilizzando Fake Store API come backend fittizio per i prodotti e le loro pagine di dettaglio.
+
+### Riassunto della Consegna
+
+La consegna richiedeva di:
+
+- Creare una nuova applicazione React per un mini e-commerce.
+- Installare React Router DOM:
+  - `npm i react-router-dom`
+- Definire almeno tre pagine principali:
+  - Homepage con un messaggio di benvenuto o un’immagine promozionale.
+  - Pagina “Chi siamo”.
+  - Pagina “Prodotti” che recuperi e mostri la lista dei prodotti da:
+    - `https://fakestoreapi.com/products`
+- Implementare una Navbar visibile in tutte le pagine per navigare tra le sezioni principali.
+- Rendere ogni prodotto della pagina Prodotti cliccabile utilizzando `<Link>`.
+- Aggiungere una pagina di dettaglio per ogni prodotto, con le informazioni caricate da:
+  - `https://fakestoreapi.com/products/:id`
+- Configurare un routing dinamico che legga l’ID del prodotto dalla URL.
